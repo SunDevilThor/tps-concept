@@ -340,15 +340,17 @@ a { color: var(--rose-ink); }
 .included-card {
   background: var(--cream); border: var(--hairline);
   border-radius: var(--radius); padding: 26px 30px;
-  display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start;
+  display: grid; grid-template-columns: auto 1fr; gap: 6px 20px; align-items: start;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .included-card:hover { transform: translateX(6px); box-shadow: var(--shadow-soft); }
 
 .included-card::before {
   content: "\2666"; font-size: 15px; color: var(--rosegold);
-  margin-top: 6px;
+  margin-top: 7px; grid-row: 1;
 }
+
+.included-name, .included-copy { grid-column: 2; }
 
 .included-name {
   font-family: var(--serif); font-weight: 600; font-size: 21px;

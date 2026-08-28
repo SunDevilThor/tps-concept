@@ -138,6 +138,10 @@ a { color: var(--rose-ink); }
 }
 .nav-links a:not(.btn):hover { color: var(--rose-deep); }
 .nav-links .ext { font-size: 10px; margin-left: 3px; }
+
+.nav-ig { display: flex; align-items: center; }
+.nav-ig img { display: block; transition: transform 0.2s ease; }
+.nav-ig:hover img { transform: scale(1.12); }
 .btn-nav { padding: 11px 22px; }
 
 .nav-toggle {
